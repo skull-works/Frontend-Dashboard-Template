@@ -27,9 +27,9 @@ const Navbar: React.FC<NavbarProps> = () => {
     if (isOpen) {
         return ( 
             <ScaleFade initialScale={0.9} in={isOpen}>
-                <Flex h='100vh'>
+                <Flex w='160px' h='100vh'>
                     <UnorderedList 
-                    w='150px'
+                    w='100%'
                     my='auto'
                     py='6'
                     bg='blue.800'
