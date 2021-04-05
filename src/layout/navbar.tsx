@@ -95,7 +95,9 @@ const Navbar: React.FC<NavbarProps> = () => {
     return (
         <Flex 
         direction={['row','column']}
-        bg={['teal.400','teal.400']} 
+        bg={['']}
+        border='1px'
+        borderColor="teal.700"
         w={['160px','50px']}
         h={['30px', 'auto']}
         my={['', 'auto']} 

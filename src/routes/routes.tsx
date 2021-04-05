@@ -2,9 +2,7 @@ import * as React from 'react';
 
 // Layout
 import Navbar from '../layout/navbar';
-import { 
-    Box, Flex
- } from "@chakra-ui/react"
+import { Box, Flex } from "@chakra-ui/react"
 export interface RoutesProps {
     
 }
