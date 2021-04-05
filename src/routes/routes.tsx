@@ -1,12 +1,15 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
  
+// Pages
+import Home from '../pages/home/home';
+
 const Routes = () => {
     return ( 
         <>
             <Switch>
                 <Route exact path='/'>
-                    Home
+                    <Home />
                 </Route>
                 <Route exact path='/inventory'>
                     Inventory

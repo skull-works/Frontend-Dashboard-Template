@@ -97,11 +97,11 @@ const Navbar = () => {
         w={['160px','50px']}
         h={['30px', 'auto']}
         my={['', 'auto']} 
-        position='relative'
+        position='fixed'
         roundedRight={['','lg']}
         rounded={['sm','']}
         py={['6px','10px']}
-        marginTop={["2"]}
+        marginTop={["2", "250"]}
         marginLeft={["2","0"]}
         color='white'
         fontSize={['10px','12px']}

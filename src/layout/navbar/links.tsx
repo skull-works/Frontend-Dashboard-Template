@@ -7,13 +7,13 @@ const NavbarLinks = () => {
     return ( 
         <Fragment>
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
-                <Link to='/'>Main</Link>
+                <Link to='/'>home</Link>
             </ListItem>
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
-                <Link to='/inventory'>Inventory</Link>
+                <Link to='/inventory'>inventory</Link>
             </ListItem>
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
-                <Link to='/stocks'>Stocks</Link>
+                <Link to='/stocks'>stocks</Link>
             </ListItem>
         </Fragment>
     );
