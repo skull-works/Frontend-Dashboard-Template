@@ -11,15 +11,13 @@ import {
     useDisclosure,
  } from "@chakra-ui/react"
  
- import { CloseIcon } from '@chakra-ui/icons'
+import { CloseIcon } from '@chakra-ui/icons'
 
- import { Logo } from "../Logo"
+import { Logo } from "../../Logo"
+import NavbarLinks from './links';
 
-export interface NavbarProps {
-    
-}
- 
-const Navbar: React.FC<NavbarProps> = () => {
+
+const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure()
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -84,9 +82,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                         <Logo h='80px' mx='auto' pointerEvents="none" />
                     </ListItem>
                     <Divider w='80%' mx='auto' />
-                    <ListItem cursor='pointer' _hover={{color: "teal.500"}}>Main</ListItem>
-                    <ListItem cursor='pointer' _hover={{color: "teal.500"}}>Inventory</ListItem>
-                    <ListItem cursor='pointer' _hover={{color: "teal.500"}}>Stocks</ListItem>
+                    <NavbarLinks />
                 </UnorderedList>
             </TransitionWrapper>
         );

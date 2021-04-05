@@ -1,20 +1,20 @@
 import * as React from 'react';
-
-// Layout
-import Navbar from '../layout/navbar';
-import { Box, Flex } from "@chakra-ui/react"
-export interface RoutesProps {
-    
-}
+import { Switch, Route } from 'react-router-dom';
  
-const Routes: React.FC<RoutesProps> = () => {
+const Routes = () => {
     return ( 
         <>
-            <Flex h='100vh'>
-                <Navbar />
-                <Box direction='column' w='100%' h='100%' overflow='auto'>
-                </Box>
-            </Flex>
+            <Switch>
+                <Route exact path='/'>
+                    Home
+                </Route>
+                <Route exact path='/inventory'>
+                    Inventory
+                </Route>
+                <Route exact path='/stocks'>
+                    stocks
+                </Route>
+            </Switch>
         </>
      );
 }
