@@ -9,6 +9,7 @@ import {
     ScaleFade,
     Slide,
     useDisclosure,
+    useColorModeValue,
  } from "@chakra-ui/react"
  
 import { CloseIcon } from '@chakra-ui/icons'
@@ -19,6 +20,7 @@ import NavbarLinks from './links';
 
 const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure()
+    const navBarTextColor = useColorModeValue('teal.700', 'white')
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const handleResize = () => {
@@ -103,7 +105,7 @@ const Navbar = () => {
         py={['6px','10px']}
         marginTop={["2", "250"]}
         marginLeft={["2","0"]}
-        color='white'
+        color={navBarTextColor}
         fontSize={['10px','12px']}
         fontFamily='Kiwi Maru'
         textAlign='center'

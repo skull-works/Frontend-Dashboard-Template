@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
  
 // Pages
 import Home from '../pages/home/home';
+import Graph from '../pages/graphs/graphs';
 
 const Routes = () => {
     return ( 
@@ -11,11 +12,11 @@ const Routes = () => {
                 <Route exact path='/'>
                     <Home />
                 </Route>
-                <Route exact path='/inventory'>
-                    Inventory
+                <Route exact path='/graphs'>
+                    <Graph />
                 </Route>
-                <Route exact path='/stocks'>
-                    stocks
+                <Route exact path='/inventory'>
+                    inventory
                 </Route>
             </Switch>
         </>
