@@ -73,9 +73,9 @@ const Navbar = () => {
                     w='10px' 
                     position='absolute' 
                     top='0' 
-                    right='0'
+                    left='0'
                     mt='10px'
-                    mr='10px'
+                    ml='10px'
                     cursor='pointer' 
                     _hover={{color: "teal.500"}}
                     onClick={onToggle}
