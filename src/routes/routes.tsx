@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
  
 // Pages
+import InProgressRender from '../pages/inprogress/index';
 import Home from '../pages/home/home';
 import Graph from '../pages/graphs/graphs';
 
@@ -16,7 +17,7 @@ const Routes = () => {
                     <Graph />
                 </Route>
                 <Route exact path='/inventory'>
-                    inventory
+                    <InProgressRender />
                 </Route>
             </Switch>
         </>
