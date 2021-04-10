@@ -13,7 +13,7 @@ const Routes = () => {
                 <Route exact path='/'>
                     <Home />
                 </Route>
-                <Route exact path='/graphs'>
+                <Route exact path='/Dashboard'>
                     <Graph />
                 </Route>
                 <Route exact path='/inventory'>

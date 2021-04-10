@@ -16,7 +16,7 @@ import LineGraph from './charts/line.subview';
 const Graphs = () => {
     return (
         <>
-            <title>Graphs</title>
+            <title>Dashboard</title>
             <Box w={['100%','84%']} h='100%' mx='auto' >
                 <Box w={['94%','96%']} mx='auto'>
                     <Flex justifyContent='space-between'>
