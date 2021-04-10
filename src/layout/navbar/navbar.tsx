@@ -60,7 +60,7 @@ const Navbar = () => {
                 bg='blue.800'
                 mx={['auto']}
                 position='fixed'
-                top={['0','360']}
+                top={['0','250']}
                 left={['0','4']}
                 rounded={['','2xl','2xl','2xl']} 
                 color='white'
@@ -103,7 +103,7 @@ const Navbar = () => {
         roundedRight={['','lg']}
         rounded={['sm','']}
         py={['6px','10px']}
-        marginTop={["2", "400"]}
+        marginTop={["2", "300"]}
         marginLeft={["2","0"]}
         color={navBarTextColor}
         fontSize={['10px','12px']}

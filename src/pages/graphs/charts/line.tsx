@@ -58,7 +58,7 @@ const LineGraph = () => {
 
     return ( 
         <ResponsiveContainer width="90%" height={500}>
-            <LineChart data={data} margin={{ top: 100, left: 40, bottom: 40 }}>
+            <LineChart data={data} margin={{ top: 100, left: 10, bottom: 40 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />

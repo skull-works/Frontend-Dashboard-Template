@@ -28,14 +28,14 @@ const Graphs = () => {
                     <Divider w='100%' h='0.2vh' mt='4' bg='gray.600' />
                 </Box>
                 <Stack
-                direction={['column', 'row']}
+                direction={['column', 'column', 'column', 'row']}
                 mt='20'
                 spacing='6'
                 >
-                    <Box w={['100%', '40%']} h='500px' bg='gray.700' rounded='md'>
+                    <Box w={['100%', '100%', '100%', '40%']} h='500px' bg='gray.700' rounded='md'>
                         <LineGraph />
                     </Box>
-                    <Box w={['100%', '60%']} h='500px' bg='gray.700' rounded='md'>
+                    <Box w={['100%', '100%', '100%', '60%']} h='500px' bg='gray.700' rounded='md'>
                         <BarGraph />
                     </Box>
                 </Stack>
