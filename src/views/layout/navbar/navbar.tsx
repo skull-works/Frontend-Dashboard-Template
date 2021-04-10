@@ -14,7 +14,7 @@ import {
  
 import { CloseIcon } from '@chakra-ui/icons'
 
-import { Logo } from "../../Logo"
+import { Logo } from "../../../Logo"
 import NavbarLinks from './links';
 
 
