@@ -2,7 +2,7 @@ import * as React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Box, Flex } from "@chakra-ui/react"
 
-import Navbar from '../layout/navbar/navbar';
+import Navbar from '../layout/navbar/navbar.layout';
 import Routes from '../../routes/routes';
 
 export interface MainProps {

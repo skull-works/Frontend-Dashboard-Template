@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
  
 // Pages
-import InProgressRender from '../views/pages/inprogress/index';
-import Home from '../views/pages/home/home';
-import Graph from '../views/pages/graphs/graphs';
+import InProgressRender from '../pages/sublayers/inprogress/inprogress.view';
+import Home from '../pages/sublayers/home/home.view';
+import Graph from '../pages/sublayers/graphs/view/graph.view';
 
 const Routes = () => {
     return ( 

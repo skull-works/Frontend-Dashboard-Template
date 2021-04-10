@@ -2,7 +2,7 @@ import * as React from "react"
 import { ChakraProvider } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import theme from './theme/theme';
-import Main from './views/pages/main';
+import Main from './layers/pages/sublayers/main.view';
 
 
 export const App = () => {

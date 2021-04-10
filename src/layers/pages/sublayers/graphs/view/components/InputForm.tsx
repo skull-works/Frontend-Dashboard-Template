@@ -17,7 +17,7 @@ import {
     FormLabel,
   } from "@chakra-ui/react"
 
-  import Datepicker from '../../../components/DatePicker';
+  import Datepicker from '../../../../components/DatePicker';
 
  
 const InputForm = () => {

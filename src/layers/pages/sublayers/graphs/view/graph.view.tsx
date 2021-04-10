@@ -10,8 +10,8 @@ import {
 } from '@chakra-ui/react';
 
 import InputForm from './components/InputForm';
-import BarGraph from './charts/bar';
-import LineGraph from './charts/line';
+import BarGraph from './charts/bar.subview.';
+import LineGraph from './charts/line.subview';
  
 const Graphs = () => {
     return (
