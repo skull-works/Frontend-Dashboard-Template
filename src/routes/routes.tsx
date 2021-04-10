@@ -2,7 +2,9 @@ import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
  
 // Pages
-import Home from '../pages/home/home';
+import InProgressRender from '../views/pages/inprogress/index';
+import Home from '../views/pages/home/home';
+import Graph from '../views/pages/graphs/graphs';
 
 const Routes = () => {
     return ( 
@@ -11,11 +13,11 @@ const Routes = () => {
                 <Route exact path='/'>
                     <Home />
                 </Route>
-                <Route exact path='/inventory'>
-                    Inventory
+                <Route exact path='/graphs'>
+                    <Graph />
                 </Route>
-                <Route exact path='/stocks'>
-                    stocks
+                <Route exact path='/inventory'>
+                    <InProgressRender />
                 </Route>
             </Switch>
         </>

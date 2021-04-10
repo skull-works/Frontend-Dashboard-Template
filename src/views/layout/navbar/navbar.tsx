@@ -9,16 +9,18 @@ import {
     ScaleFade,
     Slide,
     useDisclosure,
+    useColorModeValue,
  } from "@chakra-ui/react"
  
 import { CloseIcon } from '@chakra-ui/icons'
 
-import { Logo } from "../../Logo"
+import { Logo } from "../../../Logo"
 import NavbarLinks from './links';
 
 
 const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure()
+    const navBarTextColor = useColorModeValue('teal.700', 'white')
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const handleResize = () => {
@@ -58,7 +60,7 @@ const Navbar = () => {
                 bg='blue.800'
                 mx={['auto']}
                 position='fixed'
-                top={['0','200']}
+                top={['0','250']}
                 left={['0','4']}
                 rounded={['','2xl','2xl','2xl']} 
                 color='white'
@@ -71,9 +73,9 @@ const Navbar = () => {
                     w='10px' 
                     position='absolute' 
                     top='0' 
-                    right='0'
+                    left='0'
                     mt='10px'
-                    mr='10px'
+                    ml='10px'
                     cursor='pointer' 
                     _hover={{color: "teal.500"}}
                     onClick={onToggle}
@@ -101,9 +103,9 @@ const Navbar = () => {
         roundedRight={['','lg']}
         rounded={['sm','']}
         py={['6px','10px']}
-        marginTop={["2", "250"]}
+        marginTop={["2", "300"]}
         marginLeft={["2","0"]}
-        color='white'
+        color={navBarTextColor}
         fontSize={['10px','12px']}
         fontFamily='Kiwi Maru'
         textAlign='center'
