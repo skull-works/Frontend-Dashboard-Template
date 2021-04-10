@@ -10,7 +10,7 @@ const NavbarLinks = () => {
                 <Link to='/'>home</Link>
             </ListItem>
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
-                <Link to='/Dashboard'>Dashboard</Link>
+                <Link to='/Dashboard'>dashboard</Link>
             </ListItem>
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
                 <Link to='/inventory'>inventory</Link>
