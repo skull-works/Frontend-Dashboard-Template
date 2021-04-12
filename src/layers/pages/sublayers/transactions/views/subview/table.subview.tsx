@@ -56,11 +56,13 @@ import {
         borderRadius='lg'
         borderColor={background}
         overflow='hidden'
+        overflowX='auto'
         >
             <Table 
             variant='simple'
             w='100%'
             size='lg'
+            overflowX='auto'
             >
                 <Thead>
                     <Tr>

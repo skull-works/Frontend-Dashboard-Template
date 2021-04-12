@@ -8,8 +8,8 @@ import {
 
 import CommonPagelayout from '../../../layout/common/common.layout';
 import InputForm from './components/InputForm';
-import BarGraph from './charts/bar.subview.';
-import LineGraph from './charts/line.subview';
+import BarGraph from './charts/bar.chart';
+import LineGraph from './charts/line.chart';
  
 const Graphs = () => {
     return (
