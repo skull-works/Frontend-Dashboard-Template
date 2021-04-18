@@ -36,7 +36,7 @@ const Navbar = () => {
     }, [])
 
     const TransitionWrapper = (props: any) => {
-        if (windowWidth < 480) {
+        if (windowWidth < 768) {
             return(
                 <Slide direction="left" in={isOpen} style={{ zIndex: 10 }}>
                     {props.children}
@@ -56,14 +56,15 @@ const Navbar = () => {
         return ( 
             <TransitionWrapper>
                 <UnorderedList 
-                w={['100%', '160px']}
+                zIndex={2} 
+                w={['100%', '100%', '160px']}
                 py='6'
                 bg='blue.800'
                 mx={['auto']}
                 position='fixed'
-                top={['0','250']}
-                left={['0','4']}
-                rounded={['','2xl','2xl','2xl']} 
+                top={['0','0','150']}
+                left={['0','0','4']}
+                rounded={['','','2xl','2xl']} 
                 color='white'
                 fontSize='17px'
                 fontFamily='Kiwi Maru'
@@ -105,7 +106,7 @@ const Navbar = () => {
         roundedRight={['','','lg']}
         rounded={['sm','sm','']}
         py={['6px','6px','10px']}
-        marginTop={['2','2','300']}
+        marginTop={['2','2','200']}
         marginLeft={['2','2','0']}
         color='white'
         fontSize={['10px','10px','12px']}
