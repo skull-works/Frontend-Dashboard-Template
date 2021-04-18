@@ -19,8 +19,9 @@ import NavbarLinks from './links';
 
 
 const Navbar = () => {
-    const { isOpen, onToggle } = useDisclosure()
-    const navBarBg = useColorModeValue('blue.500', 'teal.800')
+    const { isOpen, onToggle } = useDisclosure();
+    const navBarBg = useColorModeValue('blue.500', 'teal.800');
+    const navBarBgHover = useColorModeValue('blue.400', 'teal.600');
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const handleResize = () => {
@@ -93,26 +94,26 @@ const Navbar = () => {
     return (
         <Flex
         zIndex={2} 
-        direction={['row','column']}
+        direction={['row','row','column']}
         bg={navBarBg}
         border='1px'
         borderColor={navBarBg}
-        w={['160px','50px']}
-        h={['30px', 'auto']}
-        my={['', 'auto']} 
+        w={['160px','160px','50px']}
+        h={['30px','30px', 'auto']}
+        my={['','','auto']} 
         position='fixed'
-        roundedRight={['','lg']}
-        rounded={['sm','']}
-        py={['6px','10px']}
-        marginTop={["2", "300"]}
-        marginLeft={["2","0"]}
+        roundedRight={['','','lg']}
+        rounded={['sm','sm','']}
+        py={['6px','6px','10px']}
+        marginTop={['2','2','300']}
+        marginLeft={['2','2','0']}
         color='white'
-        fontSize={['10px','12px']}
+        fontSize={['10px','10px','12px']}
         fontFamily='Kiwi Maru'
         textAlign='center'
-        justifyContent={['center','']}
+        justifyContent={['center','center','']}
         cursor='pointer'
-        _hover={{color: "teal.500"}}
+        _hover={{backgroundColor: navBarBgHover, borderColor: navBarBgHover}}
         onClick={onToggle}>
             <Text pb={['','4px']} px={['2px']}>N</Text>
             <Text pb={['','4px']} px={['2px']}>A</Text>

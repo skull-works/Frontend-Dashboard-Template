@@ -58,6 +58,7 @@ import {
         overflow='hidden'
         overflowX='auto'
         >
+            <title>List Items</title>
             <Table 
             variant='simple'
             w='100%'

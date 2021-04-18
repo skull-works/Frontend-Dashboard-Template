@@ -15,12 +15,13 @@ export interface CreateItemProps {
 }
  
 const CreateItem: React.FC<CreateItemProps> = () => {
-    return ( 
+    return (
         <Box
         w='100%'
         pb='20px'
         mx='auto'
-        >
+        >   
+            <title>Create Item</title>
             <Heading fontFamily='Abel'>Create Item</Heading>
             <Stack direction='row' mt='20px' spacing='20px'>
                 <Box fontFamily='Abel' w={['50%','50%','50%','30%']} h='90%'>
