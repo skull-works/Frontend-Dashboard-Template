@@ -7,12 +7,12 @@ import {
   } from "@chakra-ui/react"
   import { ArrowBackIcon } from '@chakra-ui/icons'
 
-import CommonPagelayout from '../../../layout/common/common.layout';
-import TransactionTable from './subview/table.subview';
-import CreateItem from './subview/create-item.subview';
-
 import { ETransactionView } from './type/enum';
 import { TypeTransactionView } from './type/interface';
+
+import CommonPagelayout from '../../../layout/common/common.layout';
+import TransactionTable from './subview/list-items.subview';
+import CreateItem from './subview/create-item.subview';
  
 const Transactions = () => {
     const [transactionView, setTransactionView] = useState<TypeTransactionView>(ETransactionView.LIST);
@@ -56,7 +56,7 @@ const Transactions = () => {
             {{
                 content: (
                     <>
-                        <Box mt='100px'>
+                        <Box mt='50px' w={['90%','100%','100%','100%']} mx='auto'>
                             <Content />
                         </Box>
                     </>

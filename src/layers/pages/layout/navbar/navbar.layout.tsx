@@ -20,7 +20,7 @@ import NavbarLinks from './links';
 
 const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure()
-    const navBarTextColor = useColorModeValue('teal.700', 'white')
+    const navBarBg = useColorModeValue('blue.500', 'teal.800')
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const handleResize = () => {
@@ -91,11 +91,12 @@ const Navbar = () => {
     }
 
     return (
-        <Flex 
+        <Flex
+        zIndex={2} 
         direction={['row','column']}
-        bg={['']}
+        bg={navBarBg}
         border='1px'
-        borderColor="teal.700"
+        borderColor={navBarBg}
         w={['160px','50px']}
         h={['30px', 'auto']}
         my={['', 'auto']} 
@@ -105,7 +106,7 @@ const Navbar = () => {
         py={['6px','10px']}
         marginTop={["2", "300"]}
         marginLeft={["2","0"]}
-        color={navBarTextColor}
+        color='white'
         fontSize={['10px','12px']}
         fontFamily='Kiwi Maru'
         textAlign='center'
