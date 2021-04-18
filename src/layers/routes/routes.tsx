@@ -4,7 +4,9 @@ import { Switch, Route } from 'react-router-dom';
 // Pages
 import InProgressRender from '../pages/sublayers/inprogress/inprogress.view';
 import Home from '../pages/sublayers/home/home.view';
-import Graph from '../pages/sublayers/graphs/view/graph.view';
+import LoginForm from '../pages/sublayers/login/views/login.view';
+import Graph from '../pages/sublayers/graphs/views/graph.view';
+import Transactions from '../pages/sublayers/transactions/views/transactions.view';
 
 const Routes = () => {
     return ( 
@@ -13,8 +15,14 @@ const Routes = () => {
                 <Route exact path='/'>
                     <Home />
                 </Route>
-                <Route exact path='/graphs'>
+                <Route exact path='/Login'>
+                    <LoginForm />
+                </Route>
+                <Route exact path='/Dashboard'>
                     <Graph />
+                </Route>
+                <Route exact path='/Transactions'>
+                    <Transactions />
                 </Route>
                 <Route exact path='/inventory'>
                     <InProgressRender />

@@ -10,10 +10,16 @@ const NavbarLinks = () => {
                 <Link to='/'>home</Link>
             </ListItem>
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
-                <Link to='/graphs'>graphs</Link>
+                <Link to='/Dashboard'>dashboard</Link>
+            </ListItem>
+            <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
+                <Link to='/Transactions'>transactions</Link>
             </ListItem>
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
                 <Link to='/inventory'>inventory</Link>
+            </ListItem>
+            <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
+                <Link to='/Login'>login</Link>
             </ListItem>
         </Fragment>
     );
