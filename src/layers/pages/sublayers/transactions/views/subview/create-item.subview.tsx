@@ -8,6 +8,7 @@ import {
     FormControl,
     FormLabel,
     Stack,
+    useColorModeValue,
 } from "@chakra-ui/react"
 
 export interface CreateItemProps {
@@ -15,6 +16,8 @@ export interface CreateItemProps {
 }
  
 const CreateItem: React.FC<CreateItemProps> = () => {
+    const inputBorderColor = useColorModeValue('gray.600', 'gray.500');
+
     return (
         <Box
         w='100%'
@@ -27,33 +30,33 @@ const CreateItem: React.FC<CreateItemProps> = () => {
                 <Box fontFamily='Abel' w={['50%','50%','50%','30%']} h='90%'>
                     <FormControl fontFamily='Abel' w='100%' h='90%'>
                         <FormLabel fontSize='20px'>Store Name:</FormLabel>
-                        <Input w='100%' placeholder='Store Name'/>
+                        <Input w='100%' placeholder='Enter Store Name' _placeholder={{ color: 'gray.500' }}  borderColor={inputBorderColor} />
                     </FormControl>
                     <FormControl fontFamily='Abel' w='100%' h='90%'>
                         <FormLabel fontSize='20px'>Order Type:</FormLabel>
-                        <Input w='100%' placeholder='Store Name'/>
+                        <Input w='100%' placeholder='Enter Order Type' _placeholder={{ color: 'gray.500' }}  borderColor={inputBorderColor} />
                     </FormControl>
                     <FormControl fontFamily='Abel' w='100%' h='90%'>
                         <FormLabel fontSize='20px'>Order Amount:</FormLabel>
-                        <Input w='100%' placeholder='Store Name'/>
+                        <Input w='100%' placeholder='Enter Order Amount' _placeholder={{ color: 'gray.500' }}  borderColor={inputBorderColor} />
                     </FormControl>
                 </Box>
                 <Box fontFamily='Abel' w={['50%','50%','50%','30%']} h='90%'>
-                    <FormControl fontFamily='Abel' w='100%' h='90%'>
+                <FormControl fontFamily='Abel' w='100%' h='90%'>
                         <FormLabel fontSize='20px'>Store Name:</FormLabel>
-                        <Input w='100%' placeholder='Store Name'/>
+                        <Input w='100%' placeholder='Enter Store Name' _placeholder={{ color: 'gray.500' }}  borderColor={inputBorderColor} />
                     </FormControl>
                     <FormControl fontFamily='Abel' w='100%' h='90%'>
                         <FormLabel fontSize='20px'>Order Type:</FormLabel>
-                        <Input w='100%' placeholder='Store Name'/>
+                        <Input w='100%' placeholder='Enter Order Type' _placeholder={{ color: 'gray.500' }}  borderColor={inputBorderColor} />
                     </FormControl>
                     <FormControl fontFamily='Abel' w='100%' h='90%'>
                         <FormLabel fontSize='20px'>Order Amount:</FormLabel>
-                        <Input w='100%' placeholder='Store Name'/>
+                        <Input w='100%' placeholder='Enter Order Amount' _placeholder={{ color: 'gray.500' }}  borderColor={inputBorderColor} />
                     </FormControl>
                 </Box>
             </Stack>
-            <Button mt='20px' fontFamily='Abel' bg='blue.500' _hover={{ background: 'green.500' }}>Submit</Button>
+            <Button mt='20px' fontFamily='Abel' bg='blue.500' _hover={{ background: 'blue.400' }}>Submit</Button>
         </Box>
      );
 }

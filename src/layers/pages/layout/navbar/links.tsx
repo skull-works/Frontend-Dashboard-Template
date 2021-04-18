@@ -18,6 +18,9 @@ const NavbarLinks = () => {
             <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
                 <Link to='/inventory'>inventory</Link>
             </ListItem>
+            <ListItem cursor='pointer' _hover={{color: "teal.500"}}>
+                <Link to='/Login'>login</Link>
+            </ListItem>
         </Fragment>
     );
 }
