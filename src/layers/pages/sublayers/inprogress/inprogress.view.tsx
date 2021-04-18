@@ -13,15 +13,14 @@ const InProgressRender = () => {
             justifyContent='center'
             alignItems='center'
             >
-                <Heading fontFamily='Kiwi Maru'>Page Under Development :-)</Heading>
+                <Heading fontFamily='Kiwi Maru' fontSize={['20px','30px']}>Page Under Development :-)</Heading>
                 <Heading 
                 fontFamily='Kiwi Maru'
-                fontSize='20px' 
+                fontSize='15px' 
                 mt='12px' 
-                mr='286px'
                 _hover={{color: "teal.500"}}
                 >
-                    <Link to='/'>Click to go back Home</Link>
+                    <Link to='/'>Click this to go back Home</Link>
                 </Heading>
             </Flex>
         </>
