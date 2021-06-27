@@ -1,34 +1,41 @@
-import * as React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Switch, Route, useLocation } from 'react-router-dom';
  
 // Pages
-import InProgressRender from '../pages/sublayers/inprogress/inprogress.view';
-import Home from '../pages/sublayers/home/home.view';
-import LoginForm from '../pages/sublayers/login/views/login.view';
-import Graph from '../pages/sublayers/graphs/views/graph.view';
-import Transactions from '../pages/sublayers/transactions/views/transactions.view';
+// import InProgressRender from '../pages/sublayers/inprogress/inprogress.view';
+import Home from '../ui/pages/home/home.view';
+import LoginForm from '../ui/pages/login/views/login.view';
+import Graph from '../ui/pages/graphs/views/graph.view';
+
+// Deliveries
+import ListDeliveries from '../ui/pages/deliveries/views/listDeliveries.view';
+import FormCreateDelivery from '../ui/pages/deliveries/views/createDelivery.view';
+import DeliveryDetails from '../ui/pages/deliveries/views/deliveryDetails.view';
+import CreateReturnSlip from '../ui/pages/deliveries/views/createReturnSlip.view';
+import listDeliveriesStore, { IListDeliveriesStore } from '../ui/pages/deliveries/store/listDeliveries.store';
+
 
 const Routes = () => {
+    const resetListDeliveriesFilters = listDeliveriesStore((state: IListDeliveriesStore) => state.resetStates);
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname.split('/')[1] !== 'Delivery') 
+            resetListDeliveriesFilters();
+    }, [location.pathname, resetListDeliveriesFilters])
+
     return ( 
-        <>
-            <Switch>
-                <Route exact path='/'>
-                    <Home />
-                </Route>
-                <Route exact path='/Login'>
-                    <LoginForm />
-                </Route>
-                <Route exact path='/Dashboard'>
-                    <Graph />
-                </Route>
-                <Route exact path='/Transactions'>
-                    <Transactions />
-                </Route>
-                <Route exact path='/inventory'>
-                    <InProgressRender />
-                </Route>
-            </Switch>
-        </>
+        <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/Login' component={LoginForm} />
+            <Route exact path='/Dashboard' component={Graph} />
+
+            {/* Page Deliveries */}
+            <Route exact path='/Delivery' component={ListDeliveries} /> 
+            <Route exact path='/Delivery/create' component={FormCreateDelivery} /> 
+            <Route exact path='/Delivery/Details' component={DeliveryDetails} />
+            <Route exact path='/Delivery/ReturnSlip/create' component={CreateReturnSlip} /> 
+        </Switch>
      );
 }
  

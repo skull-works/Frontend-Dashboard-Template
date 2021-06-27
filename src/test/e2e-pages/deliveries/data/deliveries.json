@@ -1,0 +1,16 @@
+[
+    {
+        "store": "Alturas",
+        "postingDate": "01/03/2021",
+        "deliveryNumber": 1,
+        "amount": "100",
+        "paymentStatus": "UNPAID"
+    },
+    {
+        "store": "ICM",
+        "postingDate": "01/04/2021",
+        "deliveryNumber": 2,
+        "amount": "200",
+        "paymentStatus": "UNPAID"
+    }
+]
