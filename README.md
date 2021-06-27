@@ -1,6 +1,6 @@
 ## A Frontend Dashboard Template
 
-## `Description`
+### `Description`
 
 This is a Frontend Template for the following:
 - Inventory systems
