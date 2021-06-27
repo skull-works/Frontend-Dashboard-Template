@@ -1,16 +1,24 @@
 ## A Frontend Dashboard Template
 
+## `Description`
+
+This is a Frontend Template for the following:
+- Inventory systems
+- POS systems
+- Order records
+- Transactions records
+
+This will make your development in frontend faster and easier.
+
 ### `TECH STACK`
 
 - TypeScript
 - ReactJS
 - Chakra
+- MirageJS
+- Jest & React Testing Library
 
-### `Why Use This?`
+### `COMMANDS`
 
-- Easy Search feature which eliminates tedious manual file searching
-- Fast Search compared to manual way of searching
-- Automatic calculation feature compared to a manual process of calculation through papers
-- Data visualization with graphs can help users see more clearly their current numbers and understand the peaks and lows of the business
-- Data persistency which means data will not be lost
-- Data reliability which means data will be safe and can only be accessed by the user only
+- npm start `starts the development server`
+- npm test `runs all test`
