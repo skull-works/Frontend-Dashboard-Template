@@ -20,5 +20,5 @@ This will make your development in frontend faster and easier.
 
 ### `COMMANDS`
 
-- npm start `starts the development server`
-- npm test `runs all test`
+- `npm start` starts the development server
+- `npm test` runs all test
